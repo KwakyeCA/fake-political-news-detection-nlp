@@ -179,9 +179,19 @@ The notebook includes:
 
 ## References
 
-Wang, W. Y. (2017). "Liar, liar pants on fire": A new benchmark dataset for fake news detection. *Proceedings of ACL*, 422–426.
+## **References**
 
-Pennington, J., Socher, R., & Manning, C. D. (2014). GloVe: Global vectors for word representation. *Proceedings of EMNLP*, 1532-1543.
+Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of 
+deep bidirectional transformers for language understanding. *arXiv preprint 
+arXiv:1810.04805*.
+
+Pennington, J., Socher, R., & Manning, C. D. (2014). GloVe: Global vectors for word 
+representation. In *Proceedings of the 2014 Conference on Empirical Methods in 
+Natural Language Processing* (pp. 1532-1543).
+
+Wang, W. Y. (2017). "Liar, liar pants on fire": A new benchmark dataset for fake 
+news detection. In *Proceedings of the 55th Annual Meeting of the Association for 
+Computational Linguistics* (pp. 422–426).
 
 ## Timeline
 
