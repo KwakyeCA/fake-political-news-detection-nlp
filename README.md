@@ -88,7 +88,7 @@ This project implements a fake political news detection system using Natural Lan
 ### Option 1: Google Colab (Recommended)
 
 1. Open the notebook in Colab:
-   - Upload `Fake_News_Detection_Complete.ipynb` to Colab
+   - Upload `Fake_Political_News_Detection_ProjectNotebook.ipynb` to Colab
    - Or use: File → Upload notebook
 
 2. Upload dataset files when prompted
@@ -103,14 +103,14 @@ This project implements a fake political news detection system using Natural Lan
    jupyter notebook
 ```
 
-2. Open `Fake_News_Detection_Complete.ipynb`
+2. Open `Fake_Political_News_Detection_ProjectNotebook.ipynb`
 
 3. Run cells in order
 
 ## Project Structure
 ```
 fake-political-news-detection/
-├── Fake_Political_News_Detection_Complete.ipynb  # Main notebook (all phases)
+├── Fake_Political_News_Detection_ProjectNotebook.ipynb  # Main notebook (all phases)
 ├── README.md                           # This file
 ├── requirements.txt                    # Python dependencies
 └── data/                              # Dataset folder (not included)
