@@ -47,8 +47,8 @@ This project implements a fake political news detection system using Natural Lan
 
 1. **Clone this repository:**
 ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/KwakyeCA/fake-political-news-detection-nlp.git
+   cd (https://github.com/KwakyeCA/fake-political-news-detection-nlp)
 ```
 
 2. **Install required packages:**
@@ -109,8 +109,8 @@ This project implements a fake political news detection system using Natural Lan
 
 ## Project Structure
 ```
-fake-news-detection/
-├── Fake_News_Detection_Complete.ipynb  # Main notebook (all phases)
+fake-political-news-detection/
+├── Fake_Political_News_Detection_Complete.ipynb  # Main notebook (all phases)
 ├── README.md                           # This file
 ├── requirements.txt                    # Python dependencies
 └── data/                              # Dataset folder (not included)
@@ -196,7 +196,7 @@ Pennington, J., Socher, R., & Manning, C. D. (2014). GloVe: Global vectors for w
 
 **Cosmos Ameyaw Kwakye**  
 Northeastern University  
-Email: [your email if you want to include it]
+Email: [kwakye.c@northeastern.edu]
 
 ## License
 
