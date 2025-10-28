@@ -1,1 +1,0 @@
-# fake-political-news-detection-nlp
