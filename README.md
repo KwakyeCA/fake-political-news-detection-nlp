@@ -215,4 +215,4 @@ This project is for educational purposes as part of IE7500 coursework.
 ---
 
 **Last Updated:** October 27, 2025  
-**Status:** Phase 3 Complete (60% of project)
+**Status:** Phase 3 Complete (Approximately 60% of project)
