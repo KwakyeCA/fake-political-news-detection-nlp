@@ -8,6 +8,10 @@
 
 This project implements a fake political news detection system using Natural Language Processing techniques on the LIAR dataset, which contains 12,791 political statements labeled for veracity.
 
+## Why This Matters
+
+Political misinformation undermines democratic processes and public trust. With the rapid spread of false claims on social media, automated fact-checking systems are increasingly critical. This project explores how different NLP approaches—from traditional machine learning to modern deep learning—perform on real-world political statements, providing insights into which techniques are most effective for detecting misinformation in short-form political content.
+
 ## Current Status (Week 9 - Mid-Project)
 
 - ✅ **Phase 1 Complete:** Data preprocessing pipeline
@@ -63,7 +67,7 @@ The selected baseline and Phase 3 model were evaluated on the held-out test set:
 1. **Clone this repository:**
 ```bash
    git clone https://github.com/KwakyeCA/fake-political-news-detection-nlp.git
-   cd (https://github.com/KwakyeCA/fake-political-news-detection-nlp)
+   cd fake-political-news-detection-nlp
 ```
 
 2. **Install required packages:**
@@ -218,10 +222,10 @@ Computational Linguistics* (pp. 422–426).
 ## Contact
 
 **Cosmos Ameyaw Kwakye** 
-Graduate Student Amabassador - Data Analytics Engineering Program
+Graduate Student Ambassador - Data Analytics Engineering Program
 College of Engineering
 Northeastern University, Vancouver, Canada
-Email: [kwakye.c@northeastern.edu]
+Email: kwakye.c@northeastern.edu 
 
 ## License
 
