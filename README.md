@@ -15,15 +15,30 @@ This project implements a fake political news detection system using Natural Lan
 - ✅ **Phase 3 Complete:** Word embeddings (GloVe) + Multi-Layer Perceptron
 - ⏳ **Phase 4 Planned:** BERT fine-tuning (Weeks 10-12)
 
-## Performance Results
+## Model Performance
 
-| Model | Test Accuracy | F1-Score | Status |
-|-------|--------------|----------|--------|
-| Naive Bayes (TF-IDF) | 61.29% | 0.6754 | ✅ Best Baseline |
-| Logistic Regression | 61.45% | 0.6275 | ✅ Complete |
-| MLP + GloVe Embeddings | 60.77% | 0.6343 | ✅ Complete |
-| BERT (planned) | Target: 68%+ | Target: 0.75+ | ⏳ Next Phase |
+### Phase 2: Baseline Model Selection (Validation Set)
 
+Three baseline models were evaluated to select the best performing approach:
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|---------|
+| Logistic Regression | 0.6145 | 0.6309 | 0.6243 | 0.6275 | 0.6625 |
+| **Multinomial Naive Bayes** | **0.6129** | **0.5991** | **0.7740** | **0.6754** | **0.6622** |
+| Tuned Logistic Regression | 0.6106 | 0.6273 | 0.6198 | 0.6235 | 0.6634 |
+
+**Selected Model:** Multinomial Naive Bayes was chosen as the best baseline due to its highest F1-score (0.6754), indicating the best balance between precision and recall.
+
+### Final Evaluation: Test Set Results
+
+The selected baseline and Phase 3 model were evaluated on the held-out test set:
+
+| Model | Test Accuracy | Test F1 | Test ROC-AUC |
+|-------|---------------|---------|--------------|
+| **Phase 2: Naive Bayes** | **0.6101** | **0.6916** | **0.6504** |
+| Phase 3: MLP + GloVe | 0.6077 | 0.6343 | 0.6405 |
+
+**Key Finding:** The Naive Bayes baseline outperformed the MLP with static GloVe embeddings by 0.24 percentage points in accuracy and 5.73 percentage points in F1-score.
 ## Dataset
 
 **LIAR Dataset** (Wang, 2017)
