@@ -1,7 +1,7 @@
 # Fake Political News Detection Using NLP
 
-**IE7500 Applied NLP for Engineers - Course Project**  
-**Student:** Cosmos Ameyaw Kwakye  
+**IE 7500 Applied NLP for Engineers - Course Project**  
+**Student:** Cosmos Ameyaw Kwakye (Individual Project)  
 **Semester:** Fall 2025
 
 ## Project Overview
@@ -19,7 +19,7 @@ This project implements a fake political news detection system using Natural Lan
 
 | Model | Test Accuracy | F1-Score | Status |
 |-------|--------------|----------|--------|
-| Naive Bayes (TF-IDF) | 61.01% | 0.6916 | ✅ Best Baseline |
+| Naive Bayes (TF-IDF) | 61.29% | 0.6754 | ✅ Best Baseline |
 | Logistic Regression | 61.45% | 0.6275 | ✅ Complete |
 | MLP + GloVe Embeddings | 60.77% | 0.6343 | ✅ Complete |
 | BERT (planned) | Target: 68%+ | Target: 0.75+ | ⏳ Next Phase |
