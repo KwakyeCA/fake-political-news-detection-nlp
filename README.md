@@ -177,8 +177,6 @@ The notebook includes:
   - Embeddings: GloVe
   - Visualization: matplotlib, seaborn
 
-## References
-
 ## **References**
 
 Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of 
@@ -204,13 +202,15 @@ Computational Linguistics* (pp. 422–426).
 
 ## Contact
 
-**Cosmos Ameyaw Kwakye**  
-Northeastern University  
+**Cosmos Ameyaw Kwakye** 
+Graduate Student Amabassador - Data Analytics Engineering Program
+College of Engineering
+Northeastern University, Vancouver, Canada
 Email: [kwakye.c@northeastern.edu]
 
 ## License
 
-This project is for educational purposes as part of IE7500 coursework.
+This project is for educational purposes as part of IE 7500 coursework.
 
 ---
 
