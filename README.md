@@ -50,26 +50,59 @@ Political misinformation undermines democratic processes and public trust. With 
 
 ## 📊 Pipeline Overview
 
-![Pipeline Flowchart](pipeline_flowchart.png)
+<img src="figures/pipeline_flowchart.png" width="800">
 
-```
-LIAR Dataset (12,791 statements)
-         ↓
-    Preprocessing
-    (Lowercase → Tokenize → Binary Labels)
-         ↓
-    Train/Val/Test Split
-    (10,240 / 1,284 / 1,267)
-         ↓
-    ┌────────────────┼────────────────┐
-    ↓                ↓                ↓
- PHASE 2         PHASE 3          PHASE 4
-Traditional ML   Embeddings      Transformer
- TF-IDF +        GloVe +         BERT
- Naive Bayes     MLP             Fine-tuning
-    ↓                ↓                ↓
- 61.01%          60.77%           63.54%
-```
+*Figure: End-to-end pipeline for fake political news detection showing data flow from LIAR dataset through three modeling approaches.*
+
+---
+
+## 📈 Results & Visualizations
+
+### Model Performance Comparison
+
+<img src="figures/chart1_performance_comparison.png" width="700">
+
+*The dip from Naive Bayes (61.01%) to MLP+GloVe (60.77%) demonstrates that increased model complexity does not guarantee improved performance on small, short-text datasets.*
+
+---
+
+### Generalization Analysis
+
+<img src="figures/chart2_generalization.png" width="700">
+
+*MLP+GloVe exhibits severe overfitting (7.69% train-test gap), while BERT Optimized shows excellent val-test consistency (only 0.14% gap).*
+
+---
+
+### Performance vs Model Complexity
+
+<img src="figures/chart3_params_vs_performance.png" width="700">
+
+*Despite 700× more parameters, MLP+GloVe underperforms Naive Bayes—demonstrating diminishing returns of parameter count on small datasets.*
+
+---
+
+### BERT Hyperparameter Optimization
+
+<img src="figures/chart4_bert_optimization.png" width="700">
+
+*Reducing max_length from 128 to 64 tokens yielded the best improvement (+0.48%), aligning sequence length with actual text statistics.*
+
+---
+
+### Benchmark Gap Analysis
+
+<img src="figures/chart5_benchmark_gap.png" width="700">
+
+*Path from our text-only result (63.54%) to published BERT benchmarks (68-72%) through cumulative methodological enhancements.*
+
+---
+
+### F1-Score & ROC-AUC Comparison
+
+<img src="figures/chart6_f1_auc_comparison.png" width="700">
+
+*Naive Bayes achieves highest F1-score (69.2%) due to balanced precision-recall. BERT shows superior discriminative ability (ROC-AUC: 0.6721).*
 
 ---
 
@@ -77,20 +110,26 @@ Traditional ML   Embeddings      Transformer
 
 ```
 fake-political-news-detection-nlp/
+├── figures/
+│   ├── pipeline_flowchart.png
+│   ├── chart1_performance_comparison.png
+│   ├── chart2_generalization.png
+│   ├── chart3_params_vs_performance.png
+│   ├── chart4_bert_optimization.png
+│   ├── chart5_benchmark_gap.png
+│   └── chart6_f1_auc_comparison.png
 ├── notebooks/
-│   ├── Phase2_Baseline_TFIDF.ipynb      # Traditional ML baseline
-│   ├── Phase3_Embeddings_MLP.ipynb      # GloVe + Neural Network
-│   └── Phase4_BERT_Finetuning.ipynb     # BERT transformer
+│   ├── Phase2_Baseline_TFIDF.ipynb
+│   ├── Phase3_Embeddings_MLP.ipynb
+│   └── Phase4_BERT_Finetuning.ipynb
 ├── reports/
-│   ├── IE7500_Project_Final_Report.pdf  # Final report (9 pages + appendix)
-│   └── figures/                         # All charts and visualizations
-├── data/                                # Dataset folder (not included)
+│   └── IE7500_Project_Final_Report.pdf
+├── data/                              
 │   ├── train.tsv
 │   ├── valid.tsv
 │   └── test.tsv
-├── README.md                            # This file
-├── requirements.txt                     # Python dependencies
-└── pipeline_flowchart.png               # Pipeline visualization
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -131,46 +170,6 @@ fake-political-news-detection-nlp/
    - Download: [GloVe 6B](https://nlp.stanford.edu/projects/glove/)
    - Extract `glove.6B.300d.txt`
 
-### Running the Notebooks
-
-**Option 1: Google Colab (Recommended)**
-- Upload notebooks to Colab
-- Upload dataset files when prompted
-- Run all cells: `Runtime → Run all`
-
-**Option 2: Local Jupyter**
-```bash
-jupyter notebook
-# Open notebooks in order: Phase2 → Phase3 → Phase4
-```
-
----
-
-## 📈 Detailed Results
-
-### Performance Comparison
-
-| Approach | Published Range | Our Result | Achievement |
-|----------|-----------------|------------|-------------|
-| Traditional ML | 58-62% | 61.01% | 98.4% of max |
-| Static Embeddings | 59-63% | 60.77% | 96.5% of max |
-| BERT (text-only) | 63-65%* | 63.54% | 99.2% of max |
-| BERT (with enhancements) | 68-72% | N/A | — |
-
-*Estimated range for text-only BERT based on published ablation studies
-
-### Understanding the Gap to Published Benchmarks
-
-Our 63.54% vs published 68-72% reflects **methodological scope**, not implementation deficiency:
-
-| Enhancement | Estimated Gain |
-|-------------|----------------|
-| Metadata Integration (speaker, party, history) | +2-5% |
-| Custom Architectures (BERT + BiLSTM) | +1-3% |
-| Extensive Hyperparameter Search | +0.5-2% |
-| Data Augmentation | +1-3% |
-| Ensemble Methods | +1-2% |
-
 ---
 
 ## 🛠️ Methodology
@@ -200,16 +199,26 @@ Our 63.54% vs published 68-72% reflects **methodological scope**, not implementa
 
 ---
 
-## 📊 Visualizations
+## 📊 Benchmark Comparison
 
-The project includes publication-quality visualizations:
+| Approach | Published Range | Our Result | Achievement |
+|----------|-----------------|------------|-------------|
+| Traditional ML | 58-62% | 61.01% | 98.4% of max |
+| Static Embeddings | 59-63% | 60.77% | 96.5% of max |
+| BERT (text-only) | 63-65%* | 63.54% | 99.2% of max |
+| BERT (with enhancements) | 68-72% | N/A | — |
 
-- 📈 Model performance comparison charts
-- 🎯 Confusion matrices for all models
-- 📉 ROC curves and AUC scores
-- 📊 Training/validation curves
-- 🔍 Generalization analysis (train vs. val vs. test)
-- 📋 Benchmark gap analysis
+*Estimated range for text-only BERT based on published ablation studies
+
+### Understanding the Gap
+
+| Enhancement | Estimated Gain |
+|-------------|----------------|
+| Metadata Integration (speaker, party, history) | +2-5% |
+| Custom Architectures (BERT + BiLSTM) | +1-3% |
+| Extensive Hyperparameter Search | +0.5-2% |
+| Data Augmentation | +1-3% |
+| Ensemble Methods | +1-2% |
 
 ---
 
@@ -257,7 +266,7 @@ The project includes publication-quality visualizations:
 
 ## 👤 Author
 
-**Cosmos Ameyaw Kwakye, MIMA**  
+**Cosmos Ameyaw Kwakye**  
 Graduate Student Ambassador - Data Analytics Engineering Program  
 College of Engineering  
 Northeastern University, Vancouver, Canada  
