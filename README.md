@@ -13,7 +13,7 @@ IE 7500 Applied NLP for Engineers | Northeastern University | Fall 2025
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements and evaluates a comprehensive NLP pipeline for detecting fake political news using the LIAR benchmark dataset. We systematically compare three approaches—traditional machine learning, static word embeddings, and BERT transformers—to understand when model complexity provides value versus when simpler methods remain competitive.
 
@@ -23,7 +23,7 @@ Political misinformation undermines democratic processes and public trust. With 
 
 ---
 
-## 🎯 Key Results
+##  Key Results
 
 | Model | Test Accuracy | F1-Score | Parameters |
 |-------|---------------|----------|------------|
@@ -32,11 +32,11 @@ Political misinformation undermines democratic processes and public trust. With 
 | BERT (Initial) | 63.06% | 0.6247 | 110M |
 | **BERT (Optimized)** | **63.54%** | **0.6283** | **110M** |
 
-### 🏆 Best Model: BERT Optimized — 63.54% accuracy (+2.53% over baseline)
+###  Best Model: BERT Optimized — 63.54% accuracy (+2.53% over baseline)
 
 ---
 
-## 💡 Key Findings
+##  Key Findings
 
 1. **Simple models remain competitive** — Naive Bayes (5K params) outperformed MLP+GloVe (3.48M params) by 0.24%, demonstrating that model complexity doesn't guarantee better performance on small, short-text datasets.
 
@@ -48,7 +48,7 @@ Political misinformation undermines democratic processes and public trust. With 
 
 ---
 
-## 📊 Pipeline Overview
+##  Pipeline Overview
 
 <img src="figures/pipeline_flowchart.png" width="800">
 
@@ -56,7 +56,7 @@ Political misinformation undermines democratic processes and public trust. With 
 
 ---
 
-## 📈 Results & Visualizations
+##  Results & Visualizations
 
 ### Model Performance Comparison
 
@@ -106,7 +106,7 @@ Political misinformation undermines democratic processes and public trust. With 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fake-political-news-detection-nlp/
@@ -119,7 +119,7 @@ fake-political-news-detection-nlp/
 │   ├── chart5_benchmark_gap.png
 │   └── chart6_f1_auc_comparison.png
 ├── notebooks/
-│   ├── Phase2_Baseline_TFIDF.ipynb
+│   ├── Phase2&_Baseline_TFIDF.ipynb
 │   ├── Phase3_Embeddings_MLP.ipynb
 │   └── Phase4_BERT_Finetuning.ipynb
 ├── reports/
@@ -134,7 +134,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.8+
@@ -172,7 +172,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 🛠️ Methodology
+##  Methodology
 
 ### Phase 1: Data Preprocessing
 - Text cleaning (lowercase, URL/email removal)
@@ -199,7 +199,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 📊 Benchmark Comparison
+##  Benchmark Comparison
 
 | Approach | Published Range | Our Result | Achievement |
 |----------|-----------------|------------|-------------|
@@ -222,7 +222,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 🔬 Reproducibility
+##  Reproducibility
 
 - **Random seeds** set for all experiments
 - **Model checkpoints** saved for each phase
@@ -232,7 +232,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 📚 References
+##  References
 
 1. Wang, W. Y. (2017). "Liar, liar pants on fire": A new benchmark dataset for fake news detection. *ACL 2017*.
 
@@ -252,7 +252,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 🚀 Future Work
+##  Future Work
 
 1. **Metadata Integration** — Incorporate speaker identity, party affiliation, and historical fact-check counts (+2-5% expected)
 
@@ -264,7 +264,7 @@ fake-political-news-detection-nlp/
 
 ---
 
-## 👤 Author
+##  Author
 
 **Cosmos Ameyaw Kwakye**  
 Graduate Student Ambassador - Data Analytics Engineering Program  
@@ -274,11 +274,16 @@ Northeastern University, Vancouver, Canada
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational purposes as part of IE 7500 coursework at Northeastern University.
 
 ---
 
+##  Acknowledgement
+
+This project was supervised by: Professor Azim, Qurat-ul-Ain, Assistant Teaching Professor.
+
+
 **Last Updated:** December 2025  
-**Status:** ✅ Project Complete
+**Status:**  Project Complete
