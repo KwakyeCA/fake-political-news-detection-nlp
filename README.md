@@ -15,7 +15,7 @@ IE 7500 Applied NLP for Engineers | Northeastern University | Fall 2025
 
 ##  Project Overview
 
-This project implements and evaluates a comprehensive NLP pipeline for detecting fake political news using the LIAR benchmark dataset. We systematically compare three approaches—traditional machine learning, static word embeddings, and BERT transformers—to understand when model complexity provides value versus when simpler methods remain competitive.
+This project implements and evaluates a comprehensive NLP pipeline for detecting fake political news using the LIAR benchmark dataset. I systematically compare three approaches—traditional machine learning, static word embeddings, and BERT transformers—to understand when model complexity provides value versus when simpler methods remain competitive.
 
 ### Why This Matters
 
@@ -42,7 +42,7 @@ Political misinformation undermines democratic processes and public trust. With 
 
 2. **BERT provides meaningful improvement** — Despite the dataset constraints (10K samples, 18-word average), BERT's pre-training on 3.3B words enables effective transfer learning.
 
-3. **Text-only approach isolates language modeling** — Our 63.54% represents 99.2% of the estimated text-only BERT ceiling (63-65%). Published benchmarks of 68-72% incorporate metadata, custom architectures, and ensemble methods.
+3. **Text-only approach isolates language modeling** — My 63.54% represents 97.8% of the estimated text-only BERT ceiling (63-65%)*. Published benchmarks of 68-72% incorporate metadata, custom architectures, and ensemble methods.
 
 4. **Hyperparameter optimization matters** — Reducing `max_length` from 128 to 64 tokens improved accuracy by 0.48%, aligning sequence length with actual text statistics.
 
@@ -191,7 +191,7 @@ fake-political-news-detection-nlp/
 - **Training:** Adam optimizer, early stopping (37 epochs)
 - **Finding:** Underperformed baseline due to overfitting on small dataset
 
-### Phase 4: BERT Fine-tuning
+### Phase 4: BERT Fine-tuning (Optimized)
 - **Model:** `bert-base-uncased` (110M parameters)
 - **Training:** 4 epochs, lr=2e-5, batch_size=16
 - **Optimization:** Reduced `max_length` from 128 → 64 tokens (+0.48%)
@@ -205,7 +205,7 @@ fake-political-news-detection-nlp/
 |----------|-----------------|------------|-------------|
 | Traditional ML | 58-62% | 61.01% | 98.4% of max |
 | Static Embeddings | 59-63% | 60.77% | 96.5% of max |
-| BERT (text-only) | 63-65%* | 63.54% | 99.2% of max |
+| BERT (text-only) | 63-65%* | 63.54% | 97.8% of max |
 | BERT (with enhancements) | 68-72% | N/A | — |
 
 *Estimated range for text-only BERT based on published ablation studies
@@ -266,8 +266,8 @@ fake-political-news-detection-nlp/
 
 ##  Author
 
-**Cosmos Ameyaw Kwakye**  
-Graduate Student Ambassador - Data Analytics Engineering Program  
+**Cosmos Ameyaw Kwakye, BSc., MIMA**  
+MSc Candidate, Data Analytics Engineering 
 College of Engineering  
 Northeastern University, Vancouver, Canada  
 📧 kwakye.c@northeastern.edu
