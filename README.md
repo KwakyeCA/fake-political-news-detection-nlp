@@ -280,10 +280,5 @@ This project is for educational purposes as part of IE 7500 coursework at Northe
 
 ---
 
-##  Acknowledgement
-
-This project was supervised by: Professor Azim, Qurat-ul-Ain, Assistant Teaching Professor.
-
-
 **Last Updated:** December 2025  
 **Status:**  Project Complete
