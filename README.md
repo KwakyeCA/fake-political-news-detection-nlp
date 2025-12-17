@@ -266,19 +266,16 @@ fake-political-news-detection-nlp/
 
 ##  Author
 
-Cosmos Ameyaw Kwakye, BSc, MIMA
-
-MSc Candidate, Data Analytics Engineering | BSc Actuarial Science
-
-Full Member (MIMA), Institute of Mathematics and Its Applications (IMA), UK
-
-Graduate Student Ambassador - Data Analytics Engineering Program
+**Cosmos Ameyaw Kwakye, BSc, MIMA**  
+MSc Candidate, Data Analytics Engineering | BSc Actuarial Science  
+Full Member (MIMA), Institute of Mathematics and Its Applications (IMA), UK  
+Graduate Student Ambassador - Data Analytics Engineering Program  
 College of Engineering | Northeastern University, Vancouver, Canada
 
-Email: kwakye.c@northeastern.edu
-LinkedIn: linkedin.com/in/cosmos-ameyaw-kwakye-neu24dae
-Website: www.magiccna.com
-GitHub: github.com/KwakyeCA
+- Email: kwakye.c@northeastern.edu
+- LinkedIn: [linkedin.com/in/cosmos-ameyaw-kwakye-neu24dae](https://linkedin.com/in/cosmos-ameyaw-kwakye-neu24dae)
+- Website: [www.magiccna.com](http://www.magiccna.com)
+- GitHub: [github.com/KwakyeCA](https://github.com/KwakyeCA)
 
 ---
 
