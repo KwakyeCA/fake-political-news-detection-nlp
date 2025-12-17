@@ -267,6 +267,7 @@ fake-political-news-detection-nlp/
 ##  Author
 
 Cosmos Ameyaw Kwakye, BSc, MIMA
+
 MSc Candidate, Data Analytics Engineering | BSc Actuarial Science
 
 Full Member (MIMA), Institute of Mathematics and Its Applications (IMA), UK
